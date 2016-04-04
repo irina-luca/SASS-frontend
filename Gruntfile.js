@@ -27,7 +27,9 @@ module.exports = function(grunt) {
                     'bower_components/jquery/dist/jquery.js',      
                     'bower_components/angular/angular.js',
                     'bower_components/angular-animate/angular-animate.js',
-                    'bower_components/angular-ui-router/release/angular-ui-router.js'
+                    'bower_components/angular-ui-router/release/angular-ui-router.js',
+                    'bower_components/angular-ui-router/release/angular-ui-router.js',
+                    'bower_components/hawk/browser.js'
                 ],
                 dest : 'app/concat/vendors.js',
                 nonull : true

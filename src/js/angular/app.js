@@ -11,7 +11,7 @@ angular.element(document).ready(function (event) {
         })
 
         .controller('AuthCtrl', AuthCtrl)
-   
+        .factory('CrudService',CrudService)
 
         .config(config)        
         .run(run);
