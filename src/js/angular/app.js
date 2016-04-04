@@ -11,7 +11,10 @@ angular.element(document).ready(function (event) {
         })
 
         .controller('AuthCtrl', AuthCtrl)
-        .factory('CrudService',CrudService)
+        .controller('ProfileCtrl', ProfileCtrl)
+        .factory('CrudService', CrudService)
+        .factory('DataService', DataService)
+   
 
         .config(config)        
         .run(run);

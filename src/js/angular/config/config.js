@@ -16,5 +16,10 @@ function config ($stateProvider, $urlRouterProvider) {
             url: '/welcome',
             templateUrl: 'views/login.html',
             controller: 'AuthCtrl as auth'
+        })
+        .state('profile', {
+            url: '/profile',
+            templateUrl: 'views/profile.html',
+            controller: 'ProfileCtrl as profile'
         });
 }
