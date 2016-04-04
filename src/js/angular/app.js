@@ -11,6 +11,9 @@ angular.element(document).ready(function (event) {
         })
 
         .controller('AuthCtrl', AuthCtrl)
+        .controller('ProfileCtrl', ProfileCtrl)
+        .factory('CrudService', CrudService)
+        .factory('DataService', DataService)
    
 
         .config(config)        

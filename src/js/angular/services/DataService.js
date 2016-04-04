@@ -11,15 +11,15 @@ function DataService($q, $http) {
     return service;
 
     // implementation
-    function loadStuff() {
+    function loadStuff(url) {
         var def = $q.defer();
 
-        $http.get("stuff")
+        $http.get(url)
             .success(function(data) {
                 def.resolve(data);
             })
             .error(function() {
-                def.reject("Failed to load stuff");
+                def.reject("Failed to load " + url);
             });
         return def.promise;
     }

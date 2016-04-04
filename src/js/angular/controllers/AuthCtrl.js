@@ -3,4 +3,5 @@
  */
 function AuthCtrl() {
     vm = this;
+
 }
